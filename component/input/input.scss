@@ -1,0 +1,21 @@
+.input-box{
+  display: inline-block;
+  position: relative;
+}
+.my-input{
+  border-radius: 5px;
+  outline: none;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  transition: all .3s;
+  &:focus{
+    box-shadow: 0 0 3px #29e;
+    border-color: #29e;
+  }
+  &-inline{
+    padding-left: 32px;
+  }
+}

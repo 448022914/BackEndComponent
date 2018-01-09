@@ -1,0 +1,40 @@
+.btn{
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid transparent;
+  outline: none;
+  font-size: 14px;
+  padding: 4px 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: all .3s;
+  display: inline-block;
+  &:hover{
+    cursor: pointer;
+  }
+  &-primary{
+    background-color: #3ea6f0;
+    &:hover{
+      background-color: #29e;
+    }
+  }
+  &-warning{
+    background-color: #ecbc1c;
+    &:hover{
+      background-color: #f3ba00;
+    }
+  }
+  &-danger{
+    background-color: #f55151;
+    &:hover{
+      background-color: #f33232;
+    }
+  }
+  &-default{
+    border-color: #ccc;
+    background-color: #fff;
+    &:hover{
+      background-color: #fcfcfc;
+    }
+  }
+}

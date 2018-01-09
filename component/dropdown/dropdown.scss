@@ -1,0 +1,78 @@
+.dropdown-box{
+  max-width: 160px;
+  height: 50px;
+  padding: 5px 0 5px 3px;
+  box-sizing: border-box;
+  position: relative;
+  .dropdown-info{ // 展示信息
+    color: #333;
+    transition: all .3s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    &>img{
+      margin-right: 8px;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+    }
+    &>div{
+      flex: 1;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      &>span{
+        flex: 1;
+      }
+      i{
+        margin-left: 5px;
+      }
+    }
+    &:hover{
+      color: #29e;
+      cursor: pointer;
+    }
+  }
+  .dropdown-menu{ // 下拉菜单
+    box-shadow: 0 0 5px #999;
+    opacity: 1;
+    transition: all .3s;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border-radius: 5px;
+    li{
+      background-color: #fff;
+      color: #333;
+      font-size: 14px;
+      height: 36px;
+      padding: 8px 10px;
+      position: relative;
+      box-sizing: border-box;
+      transition: all .3s;
+      &::after{
+        background-color: #d3d1d1;
+        content: " ";
+        width: 94%;
+        height: 1px;
+        bottom: 0;
+        left: 3%;
+        display: block;
+        position: absolute;
+      }
+      &:last-child{
+        &::after{
+          display: none;
+        }
+      }
+      &:hover{
+        background-color: #e6f7ff;
+        cursor: pointer;
+      }
+    }
+  }
+  .dropdown-menu.dropdown-hide{
+    opacity: 0;
+  }
+}
