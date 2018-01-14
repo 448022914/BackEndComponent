@@ -1,6 +1,16 @@
 .input-box{
   display: inline-block;
   position: relative;
+  width: 100%;
+  .input-prefix{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+  }
 }
 .my-input{
   border-radius: 5px;
@@ -11,6 +21,7 @@
   box-sizing: border-box;
   padding: 6px 12px;
   transition: all .3s;
+  width: 100%;
   &:focus{
     box-shadow: 0 0 3px #29e;
     border-color: #29e;

@@ -3,7 +3,7 @@ import Header from "../../../component/header/header.jsx";
 import Dropdown from "../../../component/dropdown/dropdown.jsx";
 import TreeMenu from "../../../component/treeMenu/treeMenu.jsx";
 
-import icon from "../../../images/1.jpeg";
+import icon from "../../../images/2.jpeg";
 
 import "./index.scss";
 

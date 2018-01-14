@@ -1,5 +1,5 @@
 import React from "react";
-import "./input.scss";
+import styles from "./input.scss";
 
 export default class Input extends React.Component{
   constructor(props){
@@ -8,17 +8,17 @@ export default class Input extends React.Component{
   render(){
     const props = this.props;
     return(
-      <span className="input-box">
+      <span className={styles["input-box"]}>
         {
           props.prefix ? 
-          <span className={`fa fa-${props.prefix}`}></span>
-          : null
+            <span className={`fa fa-${props.prefix} ${styles["input-prefix"]}`}></span>
+            : null
         }
         <input 
           {...props} 
           type="text" 
-          className={`my-input ${props.prefix ? "my-input-inline" : ""}`} />
+          className={styles["my-input"]+" "+(props.prefix ? styles["my-input-inline"] : "")} />
       </span>
-    )
+    );
   }
 }

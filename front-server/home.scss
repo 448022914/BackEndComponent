@@ -1,25 +1,33 @@
-html, body{
+:global(html), 
+:global(body){
   margin: 0;
   height: 100%;
   overflow: hidden;
 }
 
-ul, li{
+:global(ul), 
+:global(li){
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-a{
+:global(a){
   text-decoration: none;
   &:active, &:visited, &:link, &:hover { text-decoration: none; }
 }
 
-h1, h2, h3, h4, h5, h6, p{
+:global(h1), 
+:global(h2), 
+:global(h3), 
+:global(h4), 
+:global(h5), 
+:global(h6), 
+:global(p){
   margin: 0;
   padding: 0;
 }
 
-#app{
+:global(#app){
   height: 100%;
 }

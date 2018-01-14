@@ -1,4 +1,8 @@
 .card-box{
-  box-shadow: 0 0 5px #333;
-  padding: 6px 12px;
+  box-shadow: 0 0 5px #bbb;
+  padding: 10px 14px;
+  transition: all .3s;
+  &:hover{
+    box-shadow: 0 0 15px #999;
+  }
 }

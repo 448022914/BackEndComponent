@@ -1,24 +1,24 @@
-import React from 'react';
-import "./header.scss";
+import React from "react";
+import styles from "./header.scss";
 
 export default class Header extends React.Component{
   constructor(props){
     super(props);
   }
   render(){
-    const {headerMenu, label, icon, dropdown} = this.props;
+    const {headerMenu} = this.props;
     return(
-      <div className="header-box">
-        <div className="header-logo"></div>
-        <ul className="header-menu">
+      <div className={styles["header-box"]}>
+        <div className={styles["header-logo"]}></div>
+        <ul className={styles["header-menu"]}>
           {
             headerMenu.map((item, index) => {
-              return <li key={index}>{item.title}</li>
+              return <li key={index}>{item.title}</li>;
             })
           }
         </ul>
         { this.props.children }
       </div>
-    )
+    );
   }
 }

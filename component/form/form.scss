@@ -1,0 +1,33 @@
+// 表单子项
+.form-item{
+  display: flex;
+  margin-bottom: 24px;
+  &-horizontal{
+    align-items: center;
+    label{
+      width: 135px;
+      text-align: right;
+    }
+  }
+  &-vertical{
+    flex-direction: column;
+    label{
+      width: 100%;
+      text-align: left;
+    }
+  }
+  .item-title-require{ color: #f00; }
+  &-content{
+    flex: 1;
+    position: relative;
+    &>div, &>ul, &>span{
+      display: block;
+    }
+    .form-item-tip{
+      position: absolute;
+      top: 104%;
+      font-size: 16px;
+      color: #f00;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
 
-import "./home.scss";
+import styles from "./home.scss";
 
 import Index from "./page/index/index.jsx";
 import Login from "./page/login/login.jsx";
@@ -9,6 +9,6 @@ import Login from "./page/login/login.jsx";
 import Input from "./../component/input/input.jsx";
 
 render(
-  <Input />,
+  <Login />,
   document.getElementById("app"),
 )

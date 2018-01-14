@@ -1,5 +1,5 @@
 import React from "react";
-import "./card.scss";
+import styles from "./card.scss";
 
 export default class Card extends React.Component{
   constructor(props){
@@ -7,9 +7,9 @@ export default class Card extends React.Component{
   }
   render(){
     return(
-      <div className="card-box">
+      <div {...this.props} className={styles["card-box"]+" "+this.props.className}>
         {this.props.children}
       </div>
-    )
+    );
   }
 }

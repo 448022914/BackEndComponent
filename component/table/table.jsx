@@ -1,13 +1,13 @@
 import React from "react";
-import "./template.scss";
+import "./table.scss";
 
-export default class Template extends React.Component{
+export default class Table extends React.Component{
   constructor(props){
     super(props);
   }
   render(){
     return(
-      <div className="template-box">
+      <div className="table-box">
         
       </div>
     );
