@@ -4,7 +4,8 @@
   "description": "lxy's private website",
   "main": "app.js",
   "scripts": {
-    "test": "webpack -p --watch --progress"
+    "start": "webpack -p --watch --progress",
+    "auto": "node autoComponent.js"
   },
   "keywords": [
     "javascript",
@@ -29,8 +30,8 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "css-loader": "^0.28.8",
-    "eslint": "^4.15.0",
+    "css-loader": "^0.28.9",
+    "eslint": "^4.16.0",
     "eslint-plugin-react": "^7.5.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",

@@ -4,14 +4,14 @@
   margin-bottom: 24px;
   &-horizontal{
     align-items: center;
-    label{
+    &>label{
       width: 135px;
       text-align: right;
     }
   }
   &-vertical{
     flex-direction: column;
-    label{
+    &>label{
       width: 100%;
       text-align: left;
     }

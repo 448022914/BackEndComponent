@@ -15,9 +15,17 @@ export default class Input extends React.Component{
             : null
         }
         <input 
-          {...props} 
-          type="text" 
-          className={styles["my-input"]+" "+(props.prefix ? styles["my-input-inline"] : "")} />
+          {...props}
+          className={styles["my-input"]+" "+
+            ((props.prefix || props.nextfix) ? "my-input-icon" : "")+" "+
+            (props.prefix ? styles["my-input-prefix"] : "")+" "+
+            (props.nextfix ? styles["my-input-nextfix"] : "")} 
+        />
+        {
+          props.nextfix ?
+            <span className={`fa fa-${props.nextfix} ${styles["input-nextfix"]}`}></span>
+            : null
+        }
       </span>
     );
   }

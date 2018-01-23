@@ -2,14 +2,19 @@
   display: inline-block;
   position: relative;
   width: 100%;
-  .input-prefix{
+  .input-prefix, .input-nextfix{
     position: absolute;
     top: 0;
-    left: 0;
     width: 32px;
     height: 32px;
     text-align: center;
     line-height: 32px;
+  }
+  .input-prefix{
+    left: 0;
+  }
+  .input-nextfix{
+    right: 0;
   }
 }
 .my-input{
@@ -26,7 +31,10 @@
     box-shadow: 0 0 3px #29e;
     border-color: #29e;
   }
-  &-inline{
+  &-prefix{
     padding-left: 32px;
+  }
+  &-nextfix{
+    padding-right: 32px;
   }
 }

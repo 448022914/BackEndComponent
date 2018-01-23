@@ -14,6 +14,9 @@ module.exports = {
     filename: "[name].js",
     publicPath: "/",
   },
+  resolve: {
+    extensions: [".js", ".jsx"]
+  },
   module: {
     rules: [{
       test: /\.(js|jsx)$/,
@@ -29,7 +32,7 @@ module.exports = {
     }, {
       test: /\.css$/i,
       use: ExtractTextPlugin.extract({
-        fallback: "style-loader", 
+        fallback: "style-loader",
         use: "css-loader"
       })
     }, {

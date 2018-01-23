@@ -1,0 +1,66 @@
+$height: 30;
+.timepicker-box{
+  position: relative;
+  input{
+    box-shadow: 0 0 5px #ccc;
+    border-color: #fff;
+    &:focus{
+      box-shadow: 0 0 5px #999;
+      border-color: #fff;
+    }
+  }
+  &-select{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 0 5px #999;
+    &>div{
+      transition: all .3s;
+      &:last-child{
+        border-right-width: 0;
+      }
+    }
+  }
+  &-hour ul {
+    height: $height*29+px;
+  }
+  &-minute ul, &-second ul {
+    height: $height*65+px;
+  }
+  &-hour, &-minute, &-second{
+    flex: 1;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc;
+    ul{
+      width: 100%;
+      li{
+        height: $height+px;
+        line-height: $height+px;
+        font-size: 14px;
+        text-align: center;
+        color: #999;
+        width: 100%;
+        padding-right: 16px;
+        box-sizing: border-box;
+        background-color: #fff;
+        transition: all .3s;
+        cursor: pointer;
+        &:hover{
+          background-color: #e6f7ff;
+        }
+      }
+      li.time-selected{
+        background-color: #29e;
+        color: #fff;
+      }
+    }
+  }
+}

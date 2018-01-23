@@ -1,0 +1,12 @@
+.checkbox-box{
+  font-size: 14px;
+  input{
+    margin-right: 6px;
+    margin-top: 0;
+  }
+  &>label{
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

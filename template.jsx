@@ -1,5 +1,5 @@
 import React from "react";
-import "./template.scss";
+import styles from "./template.scss";
 
 export default class Template extends React.Component{
   constructor(props){
@@ -7,7 +7,7 @@ export default class Template extends React.Component{
   }
   render(){
     return(
-      <div className="template-box">
+      <div className={styles["template-box"]}>
         
       </div>
     );
